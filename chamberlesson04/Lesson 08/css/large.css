@@ -1,0 +1,13 @@
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        max-width: 64rem;
+    }
+
+
+form label.sbs {
+    padding: .4rem 0;
+}
+
+    
+} 

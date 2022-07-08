@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Plan Mazatlan Chamber Commerce for  Miguel Pano in WDD 230: Web Frontend 
+    Development at Brigham Young University - Idaho">
+    <title>Mazatlan Chamber Commerce | Site Plan Home</title>
+    <script src="https://kit.fontawesome.com/9950888255.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="js/javascrip.js" defer=""></script>
+    <script src="js/windchill.js" defer=""></script>
+    <script src="js/weatherapi.js" defer=""></script>       
+
+</head>
+<body>
+    <div id="content">
+    <header class="clearfix">
+        <figure class="logo">
+            <img src="images/pxmarca.png" alt="logo">
+        </figure>
+        <section class="title">
+            <H1>Mazatlan</H1>
+            <h2>Chamber Commerce</h2>
+        </section> 
+        <div class="right-column">
+            <div class="address-wrapper">
+               <a href="contact.html">
+                141 Rafael Buelna Flamingos. <br>
+                Sin. Mazatlan, 82149 
+            </a>
+            </div>
+
+            <div class="contact-icon">
+                <a href="">
+                    <i class="fas fa-map-marker-alt"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav>       
+        <ul class="navigation">
+            <li> <button onclick="toggleMenu()"> Menu</button></li>
+            <li><a href="discover.html" >Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div id="calltoaction" class="box">
+            <picture class="heroimage">
+                <source srcset= "images/heromedium.jpg" media="(min-width:500px) and (max-width: 799px)">
+                    <source srcset="images/herolarge.jpg" media="(min-width:800px)">
+                <img class="callimg" src="images/herosmall.jpg" alt="Photograph of Hartville at night">
+            </picture>
+            <h3 class="welcome">Welcome to Mazatlan</h3>
+            <a href=""><h3 class="join">Join the Chamber</h3></a>
+        </div>
+        <div id="event" class="box">
+            <div class="headingbox">
+                <h3>GRAND OPENING</h3>
+            </div>
+            <h4>New York by The Slice</h4>
+            <p>Buy one get one free any large pizza, Friday at 2:00p.m.</p>
+            <a href="">more info ...</a> 
+        </div>
+        <div id="weather" class="box">
+
+
+            <section class="greenbackground coloredborder" id="weather">
+                <h3>Weather Summary</h3>
+                <div id="weatherboxes">
+                   <figure id="temperatureicon">
+                    <img src="" alt="" id="weather-icon"  width="300" height="50"/>
+                   </figure>            
+                   <p class="temperaturetext"><span id="current-temp"></span>° F</p>
+                   <figure class="weathertext twocol">
+                       <figcaption></figcaption>
+                   </figure>
+                    <p class="tworemfont">Wind Speed: </p>
+                    <p class="windspeed tworemfont"><span id="speed"></span> mph</p>
+                    <p class="tworemfont">Wind Chill: </p>
+                    <p class="windchill tworemfont">N/A</p>
+                </div>
+            </section>
+
+        </div>
+        <div id="join" class="notsmall" >
+            <a href="join.html"><h3 class="join2">Join Us!</h3></a>
+            <p class="jointext">Learn more about the Mazatlan chamber of commerce and how it could benefit you and your organization!</p>
+        </div>
+        <div id="newreleases" class="box">
+            <div class="headingbox">
+                <h3>New Releases</h3>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <section class="spotlights">
+            <div id="spotlight1" class="box">
+                <h3>AMC Theatre</h3>
+                <img class="spotlightimg" src="images/movie.jpg" alt="icon of movie film">
+                <div class="spotlightinfo">
+                    <h4>"America's Hometown Theatres"</h4>
+                    <div class="contactinfo">
+                        <p>contactinfo@gmail.com</p>
+                        <p>+999-999-9999 | Website</p>
+                    </div>
+                </div>
+            </div>
+            <div id="spotlight2" class="box">
+                <h3>Swimming Lessons</h3>
+                <img class="spotlightimg" src="images/swimming.png" alt="icon of person swimming">
+                <div class="spotlightinfo">
+                    <h4>Free swimming lessons for children 12 and under!</h4>
+                    <div class="contactinfo">
+                        <p>contactinfo@gmail.com</p>
+                        <p>+999-999-9999 | Website</p>
+                    </div>
+                </div>
+            </div>
+            <div id="spotlight3" class="onlylarge">
+                <h3>Lumber and Barns</h3>
+                <img class="spotlightimg" src="images/shed.png" alt="icon of shed">
+                <div class="spotlightinfo">
+                    <h4>Need a barn or shed?</h4>
+                    <div class="contactinfo">
+                        <p>contactinfo@gmail.com</p>
+                        <p>6666666666 | Website</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="fooinfo">
+            <figure class="logo">
+                <img src="images/pxmarca.png" alt="logo">
+            </figure>
+            <div class="social-media-icons-wrapper">
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+        <p>&copy;<span id="year">year</span> .:|:. Miguel Pano Martin .:|:. Mazatlán, Sin.</p>
+        <p>Last Updated: <span id="date">date</span></p><a href="file:///C:/Users/panol/Desktop/GitHubArchives/wdd230/indice.html" id="home-link">Home</a>
+    </footer>
+    </div>
+</body>
+</html>
